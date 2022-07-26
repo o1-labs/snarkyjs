@@ -159,7 +159,7 @@ declare class Field {
    * This function can only be called inside a checked computation, like a
    * SmartContract method, and causes it to fail if the assertion fails.
    */
-  assertLt(y: Field | number | string | boolean): void;
+  assertLt(y: Field | number | string | boolean, message?: string): void;
   /**
    * Assert that this [[`Field`]] is lower than or equal to another Field-like value.
    *
@@ -170,7 +170,7 @@ declare class Field {
    * This function can only be called inside a checked computation, like a
    * SmartContract method, and causes it to fail if the assertion fails.
    */
-  assertLte(y: Field | number | string | boolean): void;
+  assertLte(y: Field | number | string | boolean, message?: string): void;
   /**
    * Assert that this [[`Field`]] is greater than another Field-like value.
    *
@@ -181,7 +181,7 @@ declare class Field {
    * This function can only be called inside a checked computation, like a
    * SmartContract method, and causes it to fail if the assertion fails.
    */
-  assertGt(y: Field | number | string | boolean): void;
+  assertGt(y: Field | number | string | boolean, message?: string): void;
   /**
    * Assert that this [[`Field`]] is greater than or equal to another Field-like value.
    *
@@ -192,7 +192,7 @@ declare class Field {
    * This function can only be called inside a checked computation, like a
    * SmartContract method, and causes it to fail if the assertion fails.
    */
-  assertGte(y: Field | number | string | boolean): void;
+  assertGte(y: Field | number | string | boolean, message?: string): void;
 
   /**
    * Assert that this [[`Field`]] equals another Field-like value.
@@ -202,7 +202,7 @@ declare class Field {
    * Field.one.assertEquals(1);
    * ```
    */
-  assertEquals(y: Field | number | string | boolean): void;
+  assertEquals(y: Field | number | string | boolean, message?: string): void;
   /**
    * Assert that this [[`Field`]] is either 0 or 1.
    *
